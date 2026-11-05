@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>yemenexam.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+
+</head>
+
+<body style="margin: 0;font-family: Droid Arabic Kufi">
+    <div class="topnav">
+        <ul class="login">
+            <li><a class="active" href="#home">تسجيل الدخول</a></li>
+        </ul>
+        <ul class="phone_mail">
+
+            <li class="right"><a href="#news">009671540317</a></li>
+            <li class="right"><a href="mailto:admin@yemenexam.gov.ye">admin@yemenexam.gov.ye</a></li>
+        </ul>
+    </div>
+    <div class="navbar-header">
+        <div class="myMenuContainer">
+            <a id="dis" href="#">راسلنا</a>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#">مركز التحميل</a>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#" class="MyMenuList" onclick="toggleMenu(event,'menu1')">رقم الجلوس</a>
+            <ul id="menu1" class="MyMenu">
+                <li><a href="ninthSeatNumber.php">تاســع</a></li>
+                <li><a href="secSeatNumber.php">ثانوي</a></li>
+            </ul>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#" class="MyMenuList" onclick="toggleMenu(event,'menu2')">النتائج</a>
+            <ul id="menu2" class="MyMenu">
+                <li><a href="#">تاســع</a></li>
+                <li><a href="secResults.php"> ثانوي علمي</a></li>
+                <li><a href="#">ثانوي أدبي</a></li>
+            </ul>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#">الخدمات</a>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#" class="MyMenuList" onclick="toggleMenu(event,'menu3')">عن الإدارة</a>
+            <ul id="menu3" class="MyMenu">
+                <li><a href="#">عن الادارة</a></li>
+                <li><a href="#"> كامة الوكيل</a></li>
+                <li><a href="#"> كلمة المدير العام</a></li>
+            </ul>
+        </div>
+        <div class="myMenuContainer">
+            <a href="#">الرئيسية</a>
+        </div>
+        <button id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </button>
+
+        <h1><a class="navbar-brand" href="/Home/Index">
+                <div style="display: inline-block;">
+                    <i>E</i>
+                    <span>xamination</span>
+                </div>
+            </a></h1>
+
+    </div>
+    <div>
+        <ul id="menu-list">
+            <li>راسلنا</li>
+            <li>مركز التحميل</li>
+            <li onclick="ToggleSublist(event)">رقم الجلوس<span class="indicator"></span>
+                <ul class="menu-subList">
+                    <li><a class="link-subList" href="ninthSeatNumber.php">تاســع</a></li>
+                    <li><a class="link-subList" href="secSeatNumber.php">ثانوي</a></li>
+                </ul>
+            </li>
+            <li onclick="ToggleSublist(event)">النتائج<span class="indicator"></span>
+                <ul class="menu-subList">
+                    <li>تاســع</li>
+                    <li><a class="link-subList" href="secResults.php"> ثانوي علمي</a></li>
+                    <li> ثانوي أدبي</li>
+                </ul>
+            </li>
+            <li>الخدمات</li>
+            <li onclick="ToggleSublist(event)">عن الادارة<span class="indicator"></span>
+                <ul class="menu-subList">
+                    <li>عن الإدارة</li>
+                    <li> كلمة الوكيل</li>
+                    <li> كلمة المدير العام</li>
+                </ul>
+            </li>
+            <li>الرئيسية</li>
+
+        </ul>
+    </div>
+    <div class="slideshow-container">
+        <div class="slide">
+
+            <img src="images\18.jpg" alt="image1">
+            <div class="slide-content">
+                <h3> أرقام جلوس الشهادتين الأساسية والثانوية العامة للعام الدراسي 1444هـ / 2023م </h3>
+                <span class="date">2023/4/7</span>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images\6.jpg" alt="image2">
+            <div class="slide-content">
+                <h3>تعميم بخصوص تأخير طابور الصباح نصف ساعة</h3>
+                <span class="date">2021/11/3</span>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images\5.jpg" alt="image3">
+            <div class="slide-content">
+                <h3>قطاع المناهج والتوجيه يقوم بأعمال النظافة في مقره</h3>
+                <span class="date">2019/4/24</span>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images\17.jpg" alt="image4">
+            <div class="slide-content">
+                <h3>تعميم بخصوص تأخير طابور الصباح نصف ساعة</h3>
+                <span class="date">2021/11/3</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <table width="90%" align="center" style="border-color: blue; border-radius:2px; ">
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; background-color:#dde6e7">
+
+
+
+
+                        <div class="alert-warning">
+                            <h4 class=" text-danger">
+                                <span class=" glyphicon-calendar"></span> 2023/4/7
+
+                            </h4>
+                            <h2 class=" glyphicon-bookmark text-danger "> أرقام جلوس الشهادتين الأساسية والثانوية العامة
+                                للعام الدراسي 1444هـ / 2023م </h2>
+
+
+
+                        </div>
+
+                        <div class="text-adjust  ">
+                            <a class="example-image-link" href="images\18.jpg" data-lightbox="example-1"><img
+                                    class=" img-rounded floatImage text-left example-image" src="images\18.jpg"
+                                    width="300" alt="YEMENEXAM.COM"></a>
+
+                            أوضح الأستاذ أحمد حسين النونو – وكيل الوزارة لقطاع المناهج والتوجيه – نائب رئيس اللجنة
+                            العليا للاختبارات أن عدد طلاب الشهادتين الأساسية والثانوية ممن انطبقت عليهم شروط دخول
+                            الاختبارات العامة للشهادتين الأساسية (تاسع) والثانوية للعام الدراسي 1444هـ الموافق 2023م بلغ
+                            (467) ألف و (605) طالب وطالبة .
+
+                            واضاف النونو أنه وبناءً على توجيهات السيد العلامة / يحيى بدر الدين الحوثي - وزير التربية
+                            والتعليم - رئيس اللجنة العليا للاختبارات – بضرورة الجاهزية الكاملة لتنفيذ الاختبارات العامة
+                            في موعدها المحدد وبمتابعه ودعم وإشراف مباشر لمعالي الوزير على مختلف مراحل العمل الأمر الذي
+                            كان له الدور الرئيسي في نجاح مختلف مراحل التنفيذ التحضيرية والفنية على مستوى اللجان
+                            الاختبارية المحلية أو المركزية سواءً لجان الفحص أو لجان النظام والمراقبة ولجنة المطبعة
+                            السرية لإنجاز المهام الاختبارية ، وتوفير كافة المواد ومتطلبات عمل اللجان، مؤكداً على أن
+                            العمل متواصل بوتيرة عالية ما يجعل الوزارة في جاهزية كاملة لتنفيذ الاختبارات العامة في موعدها
+                            المحدد والتي ستبدأ يوم السبت 16من شهر شوال الموافق 6 مايو 2023م وفق القرار الوزاري رقم (63)
+                            لسنة 1443هـ بشأن التقويم المدرسي للعام الدراسي 1444هـ/ 2023م.
+
+                            و أكد أنه بإمكان الطلاب والطالبات المتقدمين لاختبارات الشهادة الثانوية العامة الحصول على
+                            أرقام جلوسهم من خلال زيارة موقع الإدارة العامة للاختبارات (www.yemenexam.com)، وذلك ابتداءً
+                            من اليوم السبت 17 رمضان 1444هـ الموافق 8 أبريل 2023.
+
+                            موجهاً جميع الطلبة إلى استغلال الفترة المتبقية على بدء الاختبارات الاستغلال الأمثل للاستعداد
+                            لدخول الاختبارات العامة متمنياً للجميع التوفيق والنجاح.
+
+                            كما نوه إلى أنه سيتم خلال الأيام القليلة القادمة تسليم أرقام الجلوس ورقياً على مستوى
+                            المدارس.
+
+                            من جانبهما أوضح الأستاذ حميد ناصر غثاية – مدير عام الاختبارات – رئيس لجان النظام والمراقبة
+                            للشهادتين الأساسية والثانوية والمهندس عفيف العنسي – رئيس لجنة النظام والمراقبة للشهادة
+                            الثانوية العامة الانتهاء من مرحلة إصدار أرقام الجلوس وتم رفع البيانات الخاصة بطلاب الشهادة
+                            الثانوية العامة على موقع الإدارة العامة للاختبارات (www.yemenexam.com). لعدد (202.281) طالب
+                            وطالبة منهم 190 ألف طالب وطالبة في القسم العلمي وبزيادة (10.000) طالب وطالبة عن العام
+                            الماضي.
+
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white"> <br></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; background-color:#dde6e7">
+
+
+
+
+                        <div class="alert-warning">
+                            <h4 class=" text-danger">
+                                <span class=" glyphicon-calendar"></span> 2023/3/31
+
+                            </h4>
+                            <h2 class=" glyphicon-bookmark text-danger ">أرقام جلوس المرحلة الأساسية 1444 هـ / 22-2023 م
+                                على الموقع الإلكتروني</h2>
+
+
+
+                        </div>
+
+                        <div class="text-adjust  ">
+                            <a class="example-image-link" href="images\6.jpg" data-lightbox="example-1"><img
+                                    class=" img-rounded floatImage text-left example-image" src="images\6.jpg"
+                                    width="300" alt="YEMENEXAM.COM"></a>
+
+                            وزارة التربية تعلن ارقام الجلوس للشهادة الاساسية (تاسع) للعام 1444هـ 2023م
+
+                            أعلنت وزارة التربية والتعليم ممثلة بقطاع المناهج والتوجيه السبت 10/رمضان/1444هـ أرقام الجلوس
+                            للطلاب المتقدمين لاختبارات الشهادة الاساسية تاسع للعام الدراسي 1444هـ /2023م
+                            وصرح الاستاذ/ احمد حسين النونو وكيل قطاع المناهج والتوجيه أن لجان النظام والمراقبة للشهادة
+                            الاساسية أنهت جميع الاعمال المناطة بها والمتعلقة بالإدخال الآلي لبيانات وصور الطلاب
+                            المتقدمين وتم إصدار إرقام الجلوس لعدد ( 265324 ) طالب وطالبة.
+                            وشكر الوكيل النونو جميع العاملين باللجان الاختبارية على المستويين المحلي والمركزي على ما
+                            بذلوه من جهود لانجاز الاعمال والمهام في وقت قياسي لغرض استكمال عملية الاتمتة وطباعة الاسئلة
+                            الاختبارية في وقت مبكر.
+                            من جانبه أكد الاستاذ/ حميد غثاية مدير عام الاختبارات أنه يمكن لأبنائنا الطلاب والطالبات
+                            الحصول على ارقام جلوسهم بصورة أولية من خلال زيارة الموقع الالكتروني للإدارة العامة
+                            للاختبارات
+                            http://www.yemenexam.com/Home/Index
+                            للتأكد من صحة بياناتهم ومعرفة مراكزهم الاختبارية
+                            وحث غثاية جميع الطلاب على الاجتهاد والمثابرة والاستعداد لأداء الاختبارات متمنيا لهم النجاح
+                            والتوفيق.
+
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white"> <br></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; background-color:#dde6e7">
+
+
+
+
+                        <div class="alert-warning">
+                            <h4 class=" text-danger">
+                                <span class=" glyphicon-calendar"></span> 2021/11/3
+
+                            </h4>
+                            <h2 class=" glyphicon-bookmark text-danger ">تعميم بخصوص تأخير طابور الصباح نصف ساعة</h2>
+
+
+
+                        </div>
+
+                        <div class="text-adjust  ">
+                            <a class="example-image-link" href="images\5.jpg" data-lightbox="example-1"><img
+                                    class=" img-rounded floatImage text-left example-image" src="images\5.jpg"
+                                    width="300" alt="YEMENEXAM.COM"></a>
+
+                            أصدر قطاع المناهج والتوجيه تعميما يلزم مدراء المدارس بتأخير طابور الصباح نصف ساعة ابتداء من
+                            تاريخ 3-11-2021 نظرا لدخول موسم الشتاء وبرودة الجو وذلك حفاظا على سلامة الطلاب والطالبات .مع
+                            وضع معالجات في المدارس التي تعمل على فترتين صباحية ومسائية
+
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white"> <br></td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; background-color:#dde6e7">
+
+
+
+
+                        <div class="alert-warning">
+                            <h4 class=" text-danger">
+                                <span class=" glyphicon-calendar"></span> 2019/4/24
+
+                            </h4>
+                            <h2 class=" glyphicon-bookmark text-danger ">قطاع المناهج والتوجيه يقوم بأعمال النظافة في
+                                مقره</h2>
+
+
+
+                        </div>
+
+                        <div class="text-adjust  ">
+                            <a class="example-image-link" href="images\17.jpg" data-lightbox="example-1"><img
+                                    class=" img-rounded floatImage text-left example-image" src="images\17.jpg"
+                                    width="300" alt="YEMENEXAM.COM"></a>
+
+                            نفذ موظفي قطاع المناهج والتوجيه صباح اليوم وبقيادة الاستاذ أحمد حسين النونو وكيل الوزارة
+                            لقطاع المناهج حملة النظافة في إطار مباني القطاع حيث قام وكيل الوزارة بتدشين حملة النظافة
+                            بساحة القطاع بمشاركة مع موظفي القطاع بعد إنتهاء الدرس الاسبوعي وذلك بمشاركة عمال الصندوق
+                            الاجتماعي الذي نفذ أعمال الرصف والتحسينات والتشجير بساحات قطاع المناهج هذا وقد عبر وكيل
+                            القطاع عن شكره لكافة الموظفين الذين شاركوا في تنفيذ حملة النظافة وللاخوة في الصندوق
+                            الاجتماعي للتنمية على ما قام به من أعمال الرصف والتشجير وأعمال التحسين في الساحات الخاصة
+                            بمباني القطاع مؤكدا على الجميع الاهتمام بنظافة القطاع من الداخل والخارج والعمل على أن يكون
+                            مظهر القطاع يتسم بالجمالية في المنظر العام وكذلك في التعاملات اليومية بين موظفي القطاع مع
+                            بعضهم البعض والتعاملات اليومية مع الطلاب والطالبات من طالبي خدمات الادارة العامة للاختبارات
+                            بما يعكس الرؤية العامة لوزارة التربية والتعليم بشكل عام من خلال الاداء والتعاملات المتميزات
+                            لاخلاقيات التربوية عامة
+
+                        </div>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white"> <br></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <!------------------------------------------------------------------------------------------->
+    <!-----------------------------------JavaScript---------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
+    <script src="Js\script.js"></script>
+
+    <!------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------->
+</body>
+
+</html>

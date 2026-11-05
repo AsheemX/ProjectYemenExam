@@ -1,0 +1,373 @@
+
+/***********************************************************************************
+********************************ss.html*********************************************
+************************************************************************************/
+
+.topnav {
+    text-align:right;
+    display: block;
+    background: #000;
+}
+.topnav ul li {
+    display: inline-block;
+    padding: 6px 20px;
+    border-left: 1px solid #353b3e;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.topnav ul li a{
+    text-decoration: none;
+    color: #efeaea;
+    padding-right:1em;
+}
+.topnav ul li a:hover{
+	color:#fff;
+}
+.topnav .login,.phone_mail{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.login{
+float: left;
+display: block;
+list-style-type: disc;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+
+}
+@media (max-width:767px){ul.login , .topnav ul{
+    float: none;
+    width: 100%;
+    text-align: center;
+}}
+.phone_mail{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    
+}
+/* ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+  }*/
+  div {
+      display: block;
+  }
+  
+  body{
+      font-family: "Droid Arabic Kufi";
+      
+  }
+  @font-face {
+      font-family: 'Droid Arabic Kufi';
+      src: url(Font/DroidKufi-Regular.ttf) format('truetype');
+  }
+  .navbar-brand {
+      padding: 0;
+      font-size: .8em;
+      line-height: 45px;
+      height: 45px;
+      letter-spacing: 2px;
+  }
+      .navbar-brand span {
+          color: #fff;
+          background: #059efc;
+          padding: 0 9px 2px 9px;
+          letter-spacing: 0px;
+          font-family: 'Droid Arabic Kufi', sans-serif;
+          font-weight: 100;
+          display: inline-block;
+  
+      }
+      .navbar-brand {
+          text-decoration-line: none;
+          }
+  .navbar-brand i{
+      font-style: normal;
+      font-size: 2em;
+      display: inline-block;
+      color: #ff0000;
+      font-family: 'Droid Arabic Kufi', sans-serif;
+      vertical-align: top;
+      font-weight:800;
+  }
+  #menu-list li{
+      padding: 5px;
+      padding: 8px 16px;
+      
+  }
+  #menu-list li:hover{
+      box-shadow: 0 0 1px #555;
+      color: red;
+      
+  }
+  #menu-list{
+      display: none;
+      display: inline-block;
+      display: inline-table;
+      flex-wrap: wrap-reverse;
+      list-style-type: none;
+      background: rgba(245, 244, 244, 0.950);
+      text-align: center;
+      margin: 0% 25% 0 47%;
+      cursor: pointer;
+      position: absolute;
+      padding: 10px 40px 10px 50px;
+      z-index: 9999;
+      width: 170px;
+      font-weight: bold;
+  
+      }
+  div #menu-list li ul{
+      list-style-type: none;
+      color: darkblue;
+      background: deepskyblue;
+      width: 100px;
+  }
+  #menu-list.show {
+      display: block;
+  }
+  #menu-button{
+      float: right;
+      margin-top: 3%;
+      margin-right: 5%;
+  }
+  .navbar-header .myMenuContainer{
+      background-color: white;
+      padding-top:1%;
+      padding-bottom: 1%;
+  
+      overflow: hidden;
+  }
+  
+  .myMenuContainer{
+      float: right;
+  }
+  
+  .navbar-header .myMenuContainer a {
+        
+        padding: 16px;
+        margin-top: 3%;
+        margin-right: 0%;
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        font-weight: bold;
+  }
+  @media  screen and (min-width: 700px) {
+        #menu-list {
+            display: none;
+        }
+        #menu-button {
+          display: none;
+        }
+  }
+  @media  screen and (max-width: 700px) {
+        #menu-button {
+          display: block;
+        }
+        #menu-list{
+            display: none;
+        }
+        #menu-list.show{
+            display: block;
+        }
+        .navbar-header .myMenuContainer:not(:first-child) {
+          display: none;
+        }
+        #dis{
+            display: none;
+        }
+      }
+  
+  ul.topnav li.right {float: right;border-left: 1px solid #bbb;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+  
+  .slideshow-container
+  {
+      position: relative;
+      max-width: 100%;
+      height: 300px;
+      margin-bottom: 320px;
+      /*overflow: hidden;*/
+  }
+  
+  .slideshow-container img {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        object-fit:cover;
+        transition: transform 2.5s ease-in-out;
+        
+  }
+      
+  .slideshow-container .slide-content {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(223, 16, 16);
+        font-size: 24px;
+        text-align: center;
+        z-index: 1;
+        opacity: 100;
+        transition: opacity 0.5s ease-in-out;
+      }
+  
+  .date{
+      background: tomato;
+      color:#fff;
+  }
+  div .alert-warning{
+      text-align:right;
+      background-color: rgba(255, 215, 162, 0.897);
+    }
+     .example-image-link{
+         float: right;
+         border-radius: 10px;
+     }
+     .text-adjust{
+      text-align-last: justify ;
+      text-indent: 5px;
+     }
+     li .menu-subList{
+      display: none;
+      
+      
+     }
+     .link-subList{
+         text-decoration: none;
+     }
+     .indicator::after {
+        content: '\25BC'; /* رمز سهم يشير إلى القائمة الفرعية */
+        margin-left: 10px; /* تعديل المسافة بين العنصر والرمز */
+        font-size: 12px;
+        vertical-align: middle;
+       
+      }
+      
+  .navbar-header .myMenuContainer a:hover{
+      cursor: pointer;
+      color: rgb(255, 0, 0);
+      box-shadow: 2 2 5px #555;
+  
+  }
+  .MyMenu {
+      display: none;
+      list-style-type: none;
+      position: absolute;
+      z-index: 9999;
+      background: lightgrey;
+      background-size: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 5px;
+  }
+  .MyMenu li{
+      padding: 5px;
+      cursor: pointer;
+      
+  }
+  .MyMenu li:hover{
+      
+      background-size: auto;
+  
+  }
+  .myMenuContainer{
+      display: flex;
+      display: inline-block;
+      
+  }
+  .MyMenuList::after{
+      content: '\25BC';
+      margin-left: 10px; /* تعديل المسافة بين العنصر والرمز */
+      vertical-align: middle;
+  }
+  
+
+
+/***********************************************************************************
+********************************ff.html*********************************************
+************************************************************************************/
+
+.text{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#text1{
+    color: blue;
+}
+#text2{
+    color: red;
+}
+label{
+    font-weight: bold;
+}
+.container{
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+input{
+    width: 300px;
+    margin: 10px 0;
+    display: block;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+input[type=text] {
+    padding: 12px 20px;
+    border: 2px solid rgb(61, 61, 61);
+    text-align: right;
+    direction: rtl;
+}
+#year{
+    padding: 12px 20px;
+    border: 2px solid rgb(61, 61, 61);
+    width: 300px;
+    margin: 10px 0;
+    text-align: right;
+    direction: rtl;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    padding: 14px 20px;
+    background-color: #6bb9fa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
